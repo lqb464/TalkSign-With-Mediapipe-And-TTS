@@ -1,0 +1,16 @@
+train:
+  dataset: "data/processed/train.npz"
+  meta_file: "data/processed/train_meta.json" # Thêm đường dẫn meta
+  out_dir: "models/checkpoints"
+  
+  epochs: 100
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  val_split: 0.2
+  seed: 42
+
+  # Evaluate settings
+  eval_interval: 1  # Đánh giá sau mỗi bao nhiêu epoch
+  save_top_k: 3     # Lưu k model tốt nhất
+  device: "auto"

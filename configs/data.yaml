@@ -1,0 +1,18 @@
+data:
+  external_data_dir: "/kaggle/input/datasets/abd0kamel/asl-citizen/ASL_Citizen"
+  raw_data_dir: "/kaggle/input/datasets/lqb464/train-asl"
+  run_kaggle: True
+  processed_data_dir: "data/processed"
+
+label:
+  silence_label: "<PAD>"
+  threshold_score: 0.8
+  eps: 1e-8
+
+record:
+  countdown_seconds: 0.8
+  record_seconds: 2.0
+
+processing:
+  sequence_length: 48
+  output_name: "train.npz"

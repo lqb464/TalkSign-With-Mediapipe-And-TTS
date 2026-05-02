@@ -1,0 +1,17 @@
+model:
+  type: "transformer" # Hoặc "gru"
+  input_dim: 1662     # Sẽ được cập nhật tự động khi train tùy vào bộ dữ liệu
+  num_classes: 10     # Số lượng ký hiệu cần nhận diện
+  params:
+    d_model: 128
+    nhead: 4
+    num_layers: 2
+    dim_feedforward: 256
+    dropout: 0.2
+
+    # Tham số cho GRU (dùng khi type là "gru")
+    # hidden_dim: 128
+    # num_layers: 2
+    # bidirectional: true
+
+  seed: 42
